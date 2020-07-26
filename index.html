@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Слайдер</title>
+</head>
+
+<body>
+
+    <div class="gallery">
+
+
+
+        <div class="gallery-container">
+
+            <div class="gallery-item">
+
+                <div class="gallery-item__img-wrap">
+                    <div class="gallery-item__img" style="background-image: url(./img/photo.png)"></div>
+                </div>
+
+
+                <div class="gallery-item__text-wrap">
+
+                    <h4 class="gallery-item__title">Двор дома</h4>
+                    <span class="gallery-item__sub-text">Обновленно 10 мая 2020</span>
+
+                </div>
+
+
+            </div>
+
+            <div class="gallery-item">
+
+                <div class="gallery-item__img-wrap">
+                    <div class="gallery-item__img" style="background-image: url(./img/photo.png)"></div>
+                </div>
+
+
+                <div class="gallery-item__text-wrap">
+
+                    <h4 class="gallery-item__title">Двор дома</h4>
+                    <span class="gallery-item__sub-text">Обновленно 10 мая 2020</span>
+
+                </div>
+
+
+            </div>
+
+            <div class="gallery-item">
+
+                <div class="gallery-item__img-wrap">
+                    <div class="gallery-item__img" style="background-image: url(./img/photo.png)"></div>
+                </div>
+
+
+                <div class="gallery-item__text-wrap">
+
+                    <h4 class="gallery-item__title">Двор дома</h4>
+                    <span class="gallery-item__sub-text">Обновленно 10 мая 2020</span>
+
+                </div>
+
+
+            </div>
+
+            <div class="gallery-item">
+
+                <div class="gallery-item__img-wrap">
+                    <div class="gallery-item__img" style="background-image: url(./img/photo.png)"></div>
+                </div>
+
+                <div class="gallery-item__text-wrap">
+
+                    <h4 class="gallery-item__title">Двор дома</h4>
+                    <span class="gallery-item__sub-text">Обновленно 10 мая 2020</span>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+
+    <button id="prev-slide">Назад</button>
+    <button id="next-slide">Далее</button>
+
+
+
+    <script src="./js/script.js"></script>
+
+    <script>
+
+        const sliderSettings = {
+            activeSlideSize: {
+                w: 945,
+                h: 515
+            },
+            slideSize: {
+                w: 590,
+                h: 315
+            },
+            translate: 630,
+            breakPoints: [{
+                breakPoint: 1850,
+                settings: {
+                    activeSlideSize: {
+                        w: 545,
+                        h: 315
+                    },
+                    slideSize: {
+                        w: 290,
+                        h: 215
+                    },
+                    translate: 320
+                }
+            }]
+        };
+        new Slider(sliderSettings);
+    </script>
+</body>
+
+</html>

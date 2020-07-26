@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    //  overflow: hidden;
+}
+
+.gallery {
+    position: relative;
+    overflow-x: hidden;
+}
+
+
+.gallery-item {
+    display: table-cell;
+    vertical-align: bottom;
+
+    font-family: 'GothamProBold', sans-serif;
+    padding: 0 20px;
+
+    &__img {
+        // width: 590px;
+        // height: 315px;
+        border-radius: 5px;
+        background-position: center;
+        background-size: cover;
+        transition: 0.5s;
+    }
+
+    &__img-wrap {
+        display: table-cell;
+        vertical-align: bottom;
+        height: 515px;
+    }
+
+    &__title {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 17px;
+    }
+
+    &__sub-text {
+        color: #7d7d7d;
+        font-size: 15px;
+    }
+
+}
+
+.gallery-container {
+    position: absolute;
+    right: 0;
+    display: inline-block;
+    transition: 0.5s;
+}
